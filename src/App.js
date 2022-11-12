@@ -1,7 +1,12 @@
-import './App.css';
+import './App.scss';
+import Index from './components/Index';
 
 function App() {
-  return <div className='App'></div>;
+  return (
+    <div className='App'>
+      <Index />
+    </div>
+  );
 }
 
 export default App;
