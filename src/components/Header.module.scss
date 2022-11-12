@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 85vw;
+  margin: 0 auto;
+  padding: 2rem 0;
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .btn {
+    background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.46%);
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.7rem;
+    cursor: pointer;
+  }
+}
