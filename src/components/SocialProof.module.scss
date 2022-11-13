@@ -6,3 +6,10 @@
   justify-content: space-around;
   background-color: #a02279;
 }
+
+@media (max-width: 865px) {
+  .social_proof {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+}
