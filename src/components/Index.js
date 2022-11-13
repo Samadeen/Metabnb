@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './Footer';
 import Header from './Header';
 import Hero from './Hero';
 import Meta from './Meta';
@@ -13,6 +14,7 @@ const Index = () => {
       <SocialProof />
       <Place />
       <Meta />
+      <Footer />
     </>
   );
 };
