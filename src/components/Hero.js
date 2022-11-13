@@ -1,12 +1,34 @@
+import { motion as m } from 'framer-motion';
+
 import styles from './Hero.module.scss';
 import hero1 from '../assets/hero1.png';
 import hero2 from '../assets/hero2.png';
 import hero3 from '../assets/hero3.png';
 import hero4 from '../assets/hero4.png';
 
+const containVariant = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      delay: 0.8,
+      duration: '1s',
+      type: 'spring',
+      ease: 'easeInOut',
+    },
+  },
+};
+
 const Hero = () => {
   return (
-    <div className={styles.hero}>
+    <m.div
+      className={styles.hero}
+      variants={containVariant}
+      initial='initial'
+      animate='animate'
+    >
       <div className={styles['hero_details']}>
         <h1>
           Rent a <span>Place</span> away from <span>Home</span> in the{' '}
@@ -36,7 +58,7 @@ const Hero = () => {
           <img src={hero4} alt='hero_image' />
         </div>
       </div>
-    </div>
+    </m.div>
   );
 };
 
