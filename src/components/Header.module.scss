@@ -75,10 +75,10 @@
 
     .nav_bar {
       background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.46%);
-      position: absolute;
+      position: fixed;
       width: 100vw;
       height: 100vh;
-      left: -1.85rem;
+      left: -0;
       top: 0;
       z-index: 1;
 
